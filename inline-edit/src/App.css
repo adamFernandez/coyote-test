@@ -13,6 +13,13 @@
   }
 }
 
+.faIcon {
+  position: relative;
+  left: 5px;
+  top: 3px;
+  z-index: 2000;
+} 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

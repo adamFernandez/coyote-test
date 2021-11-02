@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import HelloTag from './components/HelloTag/HelloTag.component';
 
-function App() {
+const App = () => {
+  const [showInput, setShowInput] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <HelloTag text='Hello World' showInput={showInput} setShowInput={setShowInput}/>
+      
     </div>
   );
 }
